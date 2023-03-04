@@ -2,9 +2,11 @@
 
 
 body{
-    height: 98vh;
+    height: 100vh;
     background-image: url('Imagens/espaco.jpg');
     background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
    
     
 }
