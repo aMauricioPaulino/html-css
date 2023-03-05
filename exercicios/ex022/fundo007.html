@@ -7,10 +7,26 @@
     <title>Alinhamento verticalt</title>
     <style>
         #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /*Vai fazer com quem a imagem ocupe 100% a caixa*/
+             position: relative; /*Toda posição de uma box em html é relativo*/
+            height: 96vh;
+            background-color: blue;
+            padding: 10px;
 
         }
 
         #content{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute; /*o que está dentro é absoluto. Vai parecer que não mudou nada, mas vc pode configurar as propriedades: left e top. obs trabalhe com porcentagens*/
+            height: 200px;
+            width: 400px;
+            background-color: green;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); /*Vai poder mexer em px e em %, tanto negativo quanto positivo. Essa tag serve pra varias outras formas de mexer com o conteúdo dentro da caixa*/
+
 
             
         }
