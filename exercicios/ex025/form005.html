@@ -5,10 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
 
 <body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iemael">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$"
+                    placeholder="(xx) xxxx-xxxx">
+                <!--Para colocar digitos e a quantidades deles é usado o atributo (pattern) e o ditito pode ser representado por outrqa forma fora o exemplo a cima (\d) pode ser assim tbm para dizer que pode ser 5 a 4 ou 9 a 10: "^\d{4,5}-\d{9,10}$". Para colocar DDD é assim \(\d{2}\)-->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+
+
+
+
+
+
+    </form>
 
 </body>
 
