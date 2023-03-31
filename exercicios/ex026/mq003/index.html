@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia Query</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*Uma forma de fazer tudo dentro do html junto*/
+        /*Mas tbm posso fazer a mesma coisa em um css*/
+
+
+        /*Declarações Gerais*/
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: blue;
+            background-size: cover;
+
+
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 3px 3px 3px rgb(25, 25, 148);
+            padding: 10px;
+        }
+
+        /*Declarações retrato*/
+        @media screen and (orientation: portrait) {
+
+            body {
+                background: url('../imagens/cev-portrait.jpg');
+            }
+
+
+        }
+
+
+
+        /*Declarações paisagem*/
+        @media screen and (orientation: landscape) {
+            body {
+                background: url('../imagens/cev-landscape.jpg');
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+
+</body>
+
+</html>
